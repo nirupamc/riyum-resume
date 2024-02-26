@@ -261,7 +261,17 @@ body {
         width: 20%;
 
     }
+
+      #reach{
     
+    
+    width: 28%;
+   
+}
+      #projects{
+         width: 18.5%;
+      }  
+      
 .blob {
     position: absolute;
     opacity: 0.5;
