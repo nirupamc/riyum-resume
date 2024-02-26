@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: futura-md;
+    src: url(./fonts/futura\ medium\ bt.ttf);
+
+}
+
+@font-face {
+    font-family: futura-bold;
+    src: url(./fonts/futura\ bold\ italic\ font.ttf);
+
+}
+
+@font-face {
+    font-family: futura-bk;
+    src: url(./fonts/futura\ xblk\ bt.ttf);
+
+}
+
+.m-t{
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: futura-bold;
+    font-size: 1.9rem;
+}
+
+h2{
+    font-family: futura-md;
+}
+h3{
+    font-family: futura-bk;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace
+}
+
+body {
+    background: hsl(0, 0%, 100%);
+    /* height: 100vh; */
+}
+
+.container {
+    /* width: 100%; */
+    /* height: 100%; */
+    isolation: isolate;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#name{
+    background-color: red;
+    color: white;
+    width: 38%;
+    padding: 5px;
+}
+
+.contact{
+    display: flex;
+    gap: 40px;
+}
+
+.vl{
+    height: 2px;
+    /* width: 100vh; */
+    border-top: 1px solid  black;
+    margin: 10px 0;
+}
+
+
+.details{
+    margin: 10px 0;
+}
+
+
+#summery{
+    background-color: red;
+    color: white;
+    width: 12.5%;
+    padding: 5px;
+}
+#education{
+    background-color: red;
+    color: white;
+    width: 34%;
+    padding: 5px;
+}
+#skills{
+    background-color: red;
+    color: white;
+    width: 20%;
+    padding: 5px;
+}
+#certifications{
+    background-color: red;
+    color: white;
+    width: 45%;
+    padding: 5px;
+}
+
+#prof-exp{
+    background-color: red;
+    color: white;
+    width: 55%;
+    padding: 5px;
+    
+}
+
+#projects{
+    background-color: red;
+    color: white;
+    width: 20%;
+    padding: 5px;
+}
+#reach{
+    background-color: red;
+    color: white;
+    width: 30%;
+    padding: 5px;
+}
+
+.detailed{
+    display: flex;
+    gap: 20px;
+    flex: 1 1 0px;
+}
+.right{
+    border-left:1px solid  black; 
+    padding-left: 10px;
+
+}
+
+.prof-exp{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.links{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+.blob {
+    position: absolute;
+    opacity: 0.5;
+    width: 500px;
+    aspect-ratio: 1/1;
+    animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate forwards;
+    filter: blur(40px);
+    z-index: -1;
+    background: linear-gradient(47deg,
+            rgba(255, 88, 139, 1) 21%,
+            rgb(0 164 173) 67%,
+            rgba(118, 74, 166, 1) 81%);
+
+    /*  Optional  */
+    /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+      inset 100px 100px 17px 0px #66319f; */
+}
+
+@keyframes animate {
+    0% {
+        translate: 50% -20%;
+        border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+    }
+
+    50% {
+        translate: 20% -100%;
+        border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+        rotate: 41deg;
+        scale: 1.15;
+    }
+
+    100% {
+        translate: 14% 10%;
+        border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+        rotate: -60deg;
+        scale: 1.05;
+    }
+}
+
+
+@media only screen and (max-width: 770px) {
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    p{
+        font-size: 9px;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    h1{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 10px;
+    }
+    h3{
+        font-size: 8px;
+    }
+    p{
+        font-size: 6px;
+    }
+
+    .detailed {
+        flex-direction: column;
+    }
+    .right {
+        border-left: none;
+        padding-left: 0;
+        
+    }
+    #summery{
+        
+        
+        width: 18%;
+        
+    }
+    #skills {
+        
+        
+        width: 10%;
+    }
+    #certifications {
+
+        width: 20%;
+
+    }
+    #prof-exp {
+
+        width: 35%;
+        
+    }
+    #education {
+
+        width: 18%;
+
+    }
+    
+.blob {
+    position: absolute;
+    opacity: 0.5;
+    width: 250px;
+    aspect-ratio: 1/1;
+    animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite alternate forwards;
+    filter: blur(40px);
+    z-index: -1;
+    background: linear-gradient(47deg,
+            rgba(255, 88, 139, 1) 21%,
+            rgb(0 164 173) 67%,
+            rgba(118, 74, 166, 1) 81%);
+
+    /*  Optional  */
+    /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+      inset 100px 100px 17px 0px #66319f; */
+}
+
+@keyframes animate {
+    0% {
+        translate: 50% -20%;
+        border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+    }
+
+    50% {
+        translate: 20% -100%;
+        border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+        rotate: 41deg;
+        scale: 1.15;
+    }
+
+    100% {
+        translate: 14% 100%;
+        border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+        rotate: -60deg;
+        scale: 1.05;
+    }
+}
+  }
